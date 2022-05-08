@@ -13,5 +13,8 @@ export class SidebarComponent  {
     return this.gifS.history;
   }
 
-  
+ buscar(i:string){
+   console.log(i)
+  this.gifS.buscarGifs(i)
+ }
 }

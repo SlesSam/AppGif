@@ -1,1 +1,30 @@
 <p>resultados works!</p>
+
+<!-- <ul>
+    <li *ngFor="let gi of resul">
+        {{gi.title}}
+
+    </li>
+</ul> -->
+
+<div class="row">
+    <div class="col">
+        <div *ngFor="let i of resul"
+        class="col-md-4 col-sm-6 animate__animated animate__fadeIn">
+            <div class="card">
+                <img [src]="i.images.downsized_medium.url" [alt]="i.title"
+                class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">
+                        {{i.title}} 
+                    </p>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+    
+</div>
+
